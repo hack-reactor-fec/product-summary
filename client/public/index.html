@@ -9,7 +9,7 @@
 <div id="Summary"></div>
 <script type="text/javascript" src="bundle.js"></script>
 <script>
-  const project = window.location.href.split('?')[1] || 0;
+  const project = window.location.href.split('?id=')[1] || 1;
   ReactDOM.render(
     React.createElement(App, {projectId: project}),
     document.getElementById('Summary')

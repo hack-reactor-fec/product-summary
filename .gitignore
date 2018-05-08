@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 z ex.
 bundle.js
+datafile.json
+Creator.txt
+Id.txt
+Product.txt

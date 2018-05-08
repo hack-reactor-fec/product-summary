@@ -1,6 +1,7 @@
 const faker = require('faker');
-const Product = require('./index.js');
+const Product = require('../index.js');
 const fs = require('fs');
+const stream = require('stream'); 
 
 
 const saveProducts = function() {
@@ -8,7 +9,7 @@ const saveProducts = function() {
   let fd = fs.openSync('datafile.json', 'a');
   let data = [];
   let datacount = 0;
-  for (let i = 1; i <= 100000; i++) {
+  for (let i = 1000001; i <= 2000000; i++) {
     console.time('datagroup')
     let instance = new Product({
       projectID: i,

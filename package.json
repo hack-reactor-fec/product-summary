@@ -57,6 +57,8 @@
     "babel-preset-env": "^1.6.1",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "newrelic": "^4.1.0",
+    "npm": "^6.0.0",
     "radium": "^0.24.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

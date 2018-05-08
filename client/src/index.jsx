@@ -19,7 +19,7 @@ class App extends React.Component {
   componentDidMount() {
     const context = this;
     console.log('component did mount');
-    axios.get(`http://52.15.172.97:80/api/${this.props.projectId}`)
+    axios.get(`http://127.0.0.1:3001/api/${this.props.projectId}`)
       .then((response) => {
         console.log(response.data)
         context.setState({

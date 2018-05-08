@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://admin:notairbnb@ds161459.mlab.com:61459/summary-module');
+mongoose.connect('mongodb://127.0.0.1/notairbnb').then(
+  () => {console.log('connected to MongoDB')},
+  err => {console.log(err)}
+);
 
 let productSchema = new mongoose.Schema({
     projectID: Number,
@@ -27,6 +30,6 @@ let productSchema = new mongoose.Schema({
     },
 })
 
-let Product = mongoose.model('Product', productSchema);
+let Product = mongoose.model('Product', productSchema, 'Product');
 
 module.exports = Product;
